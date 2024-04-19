@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { CreateOrder } from "../components/UI/CreateOrder";
-import { PreviousOrders } from "../components/UI/PreviousOrders";
+import { CreateOrder } from "../comps/UI/CreateOrder";
+import { PreviousOrders } from "../comps/UI/PreviousOrders";
 import { useDispatch } from "react-redux";
 import {
   showCardNotification,

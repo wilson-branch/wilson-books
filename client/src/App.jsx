@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { notificationActions } from "./store";
 import { Home } from "./pages/Home";
-import { AppLayout } from "./components/layout/AppLayout";
+import { Layout } from "./comps/layout/Layout";
 import { SignIn } from "./pages/SignIn";
 import { SignUp } from "./pages/SignUp";
-import { Notification } from "./components/UI/Notification";
+import { Notification } from "./comps/UI/Notification";
 import { authenticate } from "./store/actions/auth";
-import { Header } from "./components/layout/Header";
+import { Header } from "./comps/layout/Header";
 import { OrdersPages } from "./pages/OrdersPages";
 
 export const App = () => {
@@ -101,17 +101,17 @@ export const App = () => {
                 <Route
                   path="/"
                   element={
-                    <AppLayout>
+                    <Layout>
                       <Home />
-                    </AppLayout>
+                    </Layout>
                   }
                 />
                 <Route
                   path="/order"
                   element={
-                    <AppLayout>
+                    <Layout>
                       <OrdersPages />
-                    </AppLayout>
+                    </Layout>
                   }
                 />
                 <Route path="*" element={<Navigate to="/" replace />} />

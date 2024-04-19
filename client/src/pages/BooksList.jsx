@@ -6,8 +6,8 @@ import {
   hideCardNotification,
 } from "../store/actions/notification";
 import { getAllBooks } from "../API/books";
-import { BookCard } from "../components/UI/BookCard";
-import { SearchBooks } from "../components/UI/SearchBooks";
+import { BookCard } from "../comps/UI/BookCard";
+import { SearchBooks } from "../comps/UI/SearchBooks";
 
 export const BooksList = () => {
   const [books, setBooks] = useState([]);

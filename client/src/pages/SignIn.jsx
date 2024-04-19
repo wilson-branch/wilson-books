@@ -8,8 +8,8 @@ import {
 } from "../store/actions/notification";
 import { useDispatch } from "react-redux";
 import { useMutation } from "@tanstack/react-query";
-import { InputField } from "../components/UI/InputField";
-import { Button } from "../components/UI/Button";
+import { InputField } from "../comps/UI/InputField";
+import { Button } from "../comps/UI/Button";
 import { authenticate } from "../store/actions/auth";
 import { signIn } from "../API/auth";
 
